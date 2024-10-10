@@ -1,0 +1,296 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+body {
+    color: white;
+    background: url(purpleWallpaper.jpg);
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #191970;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    animation: slideRight 1s ease forwards;
+}
+.navbar a {
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+    animation: slideTop 0.5s ease forwards;
+}
+.navbar a:hover {
+    color: #0ef;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(purpleWallpaper.jpg) no-repeat;
+    background-size: cover;
+    padding: 70px 10% 0;
+}
+.home-content h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+.home-content h3 span {
+    color: #0ef;
+}
+.home-sci a {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.5s ease;
+}
+.home-sci a:hover {
+    background: #0ef;
+    color: black;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box {
+    padding: 12px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 10px;
+    color: #081b20;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;
+}
+
+/* About Section */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: url(purpleWallpaper.jpg) no-repeat;
+    background-size: cover;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 100px 10%;
+}
+.about-img img {
+    max-width: 630px;
+    width: 100%;
+    border-radius: 8px;
+}
+.about-txt h2 {
+    font-size: 60px;
+}
+.about-txt h2 span {
+    color: #0ef;
+}
+.about-txt h4 {
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.about-txt p {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 4rem;
+}
+.btn-box1 {
+    padding: 12px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 10px;
+    color: #081b20;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+.btn-box1:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan;
+}
+
+/* Services Section */
+.services {
+    color: aliceblue;
+    font-size: 20px;
+    background: url(purpleWallpaper.jpg) no-repeat;
+    background-size: cover;
+    padding: 50px 10%;
+}
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+.sub-title span {
+    color: #0ef;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div {
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div:hover {
+    transform: translateY(-10px);
+}
+.read {
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+}
+.read:hover {
+    box-shadow: 0 0 20px #0ef;
+}
+
+/* Skills Section */
+.container {
+    padding: 90px;
+}
+.heading1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 20px;
+}
+.Technical-bars .bar {
+    margin: 40px 0;
+}
+.Technical-bars .bar .info span {
+    font-size: 17px;
+    font-weight: 600;
+}
+.Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000;
+}
+.Technical-bars .progress-line span {
+    height: 100%;
+    background-color: #0ef;
+    position: absolute;
+    border-radius: 10px;
+}
+.progress-line.python span {
+    width: 90%; /* Adjusted percentage for Python */
+}
+.progress-line.Java span {
+    width: 85%; /* Adjusted percentage for Java */
+}
+.progress-line.C span {
+    width: 75%; /* Adjusted percentage for C */
+}
+
+.radial-bars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial.bar {
+    width: 50%;
+    height: 170%;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial.bar svg {
+    width: 80px; /* Adjusted width for smaller radius */
+    height: 80px; /* Adjusted height for smaller radius */
+}
+
+/* Professional Skills */
+.radial-bars .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+}
+.radial-bars .text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* New Projects Section */
+.projects {
+    background: url(purpleWallpaper.jpg) no-repeat;
+    background-size: cover;
+    padding: 60px 10%;
+    color: white;
+}
+.projects h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #0ef;
+    margin-bottom: 40px;
+}
+.project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+.project img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.project-details {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+.project-details h3 {
+    font-size: 28px;
+    color: #0ef;
+    margin-bottom: 15px;
+}
+.project-details p {
+    font-size: 18px;
+    line-height: 1.5;
+}
